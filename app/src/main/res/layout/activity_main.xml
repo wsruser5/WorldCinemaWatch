@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear"
+    android:padding="@dimen/box_inset_layout_padding">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrim">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="31dp"
+            android:src="@mipmap/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="59dp"
+            android:text="E-mail"
+            android:textColor="@color/colorAcc"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="120dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="59dp"
+            android:drawableBottom="@mipmap/bottomline"
+            android:drawableTint="@color/colorAcc"
+            android:hint="you@example.com"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6B6B6B" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="#EF3A01"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6B6B6B"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="15dp"
+            android:drawableBottom="@mipmap/bottomline"
+            android:hint="you@example.com"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/colorAcc"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
